@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网页钢琴</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.start{
+			width: 584px;
+			border: 2px solid #666;  /*边框格式*/
+			margin: 0 auto;
+		}
+		.big{
+			margin: 0 auto;
+			padding: 0;
+			height: 420px;
+			position: relative;  /*相对定位*/
+			background: #E1E1E1;  /*背景颜色。复合*/
+		}
+		.big .bigg{
+			float: left;   /*浮动*/
+			text-align: center;
+			font-size: 16px;
+			/*background-position: bottom left;*/
+			background-repeat: repeat-x;  /*背景平铺*/
+		}
+		.big .white{
+			width: 71px;
+			height: 360px;
+			color: blue;
+			background-color: white;
+			border: 1px solid #999;
+		}
+		.big .black{
+			width: 36px;
+			height: 200px;
+			border: 1px solid #666;
+			background: #666;
+			position: absolute;
+			top: 0;
+		}
+		#tanzou{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body class="start">
+	<h1>钢琴：使用鼠标左键或者键盘进行弹奏</h1>
+	<div class="big">
+		<div class="bigg white" id="b1"></div>
+		<div class="bigg white" id="b2"></div>
+		<div class="bigg white" id="b3"></div>
+		<div class="bigg white" id="b4"></div>
+		<div class="bigg white" id="b5"></div>
+		<div class="bigg white" id="b6"></div>
+		<div class="bigg white" id="b7"></div>
+		<div class="bigg white" id="b8"></div>
+		<div class="bigg black" style="left: 54px" id="b9"></div>
+		<div class="bigg black" style="left: 127px" id="b10"></div>
+		<div class="bigg black" style="left: 202px" id="b11"></div>
+		<div class="bigg black" style="left: 272px" id="b12"></div>
+		<div class="bigg black" style="left: 347px" id="b13"></div>
+	</div>
+	<div>
+		<h3 id="tanzou">弹奏方式</h3>
+		<button id="luzhi">录制</button>
+		<button id="bofang">播放</button>
+		<p>使用鼠标左键点击钢琴键，或者敲击键盘</p>
+		<h3>洪超1901010308</h3>
+		<p>支持浏览器：IE9以上、Firefox10以上、Chrome17以上</p>
+	</div>
+	<script type="text/javascript" src="soundbase64.js"></script>
+</body>
+</html>
